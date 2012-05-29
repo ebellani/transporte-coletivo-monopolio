@@ -1,0 +1,46 @@
+\documentclass[a4paper, 12pt]{article}
+
+
+%this is for use in sbc
+%\usepackage{sbc-template}
+
+%better bibliography style control
+\usepackage{natbib}
+
+%utf-8, because it is the default in linux these days
+\usepackage[utf8]{inputenc}
+
+%\usepackage{graphicx}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{html}
+
+%make the url links blue
+\hypersetup{
+    pdfauthor={Eduardo Bellani},
+    pdftitle={Transporte coletivo, greve e monopólios},
+    colorlinks,
+    urlcolor= blue
+}
+
+
+\title{Transporte coletivo, greve e monopólios}
+
+%\author{Eduardo Bellani \thanks{\htmladdnormallink{blog}{http://www.cnxs.com.br} --
+%                                \htmladdnormallink{contact}
+%                                                  {mailto:ebellani@gmail.com}} } 
+
+\begin{document} 
+    \maketitle
+    \input{abstract}
+    %% \input{introduction}
+        
+    %%     % main work
+    \input{monopolio}
+    %%     \input{the_road_map}
+    %%     \input{the_texts}
+        
+    %% \input{conclusion}
+
+    \bibliographystyle{plainnat}
+    \bibliography{../../references/economy.bib}
+\end{document}
